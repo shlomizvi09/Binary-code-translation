@@ -1,0 +1,4 @@
+Pin: pin-3.18-98332-aebd7b1e6
+Copyright 2002-2020 Intel Corporation.
+A:  Source/pin/pin/image.cpp: IMG_Name: 3376: assertion failed: IMG_valid(img)
+
