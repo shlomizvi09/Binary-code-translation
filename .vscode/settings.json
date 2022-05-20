@@ -1,0 +1,7 @@
+{
+    "editor.wordWrap": "on",
+    "files.associations": {
+        "*.ph": "cpp",
+        "*.tlh": "cpp"
+    }
+}
