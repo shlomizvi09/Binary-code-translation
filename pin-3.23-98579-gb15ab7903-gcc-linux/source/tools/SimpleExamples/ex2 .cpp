@@ -142,16 +142,11 @@ const char *getPath(const char *path) {
 /* ===================================================================== */
 
 VOID Routine(RTN rtn, VOID *v) {
-	if (rtn == RTN_Invalid()){
-		return;
-	}
     RoutineCount *rc = new RoutineCount();
     rc->routineName = RTN_Name(rtn);
     rc->imageName = getPath(IMG_Name(SEC_Img(RTN_Sec(rtn))).c_str());
     rc->routineAddr = RTN_Address(rtn);
     rc->currRoutineCount = 0;
-    rc->instCount = 0;
-	
 
     routinesMap[rc->routineName] = rc;
     RTN_Open(rtn);
@@ -202,7 +197,6 @@ VOID Fini(INT32 code, VOID *v) {
         it1->second.meanTaken = (it1->second.totalIterNum) / (float)temp;
         it2 = routinesMap.find(it1->second.routineName);
         it1->second.routineCounter = it2->second->currRoutineCount;
-		it1->second.instCount = it2->second->instCount;
         it1++;
     }
 
@@ -242,4 +236,6 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-/* =================================================================*/
+/* ===================================================================== */
+/* eof */
+/* ===================================================================== */

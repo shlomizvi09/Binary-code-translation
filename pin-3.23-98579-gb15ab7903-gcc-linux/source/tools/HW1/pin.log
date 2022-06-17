@@ -1,3 +1,5 @@
-Pin: pin-3.18-98332-aebd7b1e6
-Copyright 2002-2020 Intel Corporation.
-E:  Unable to load ex1.cpp.  Check the architecture type.
+Pin: pin-3.23-98579-b15ab7903
+Copyright 2002-2022 Intel Corporation.
+E:  Pintool version does not match pin
+Pin:  b15ab7903
+Tool: aebd7b1e6
